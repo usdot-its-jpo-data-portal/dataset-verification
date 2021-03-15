@@ -104,6 +104,11 @@
             "id": "dot:4216",
             "name": "Commercial Vehicle Information Systems and Networks (CVISN) Glossary: Baseline Version",
             "url": "https://rosap.ntl.bts.gov/view/dot/4216"
+        },
+        {
+            "id": "dot:54774",
+            "name": "Feasibility Study and Assessment of Communications Approaches for Real-Time Traffic Signal Applications Study [supporting datasets]",
+            "url": "https://rosap.ntl.bts.gov/view/dot/54774"
         }
     ],
     "dtg": [
@@ -503,6 +508,26 @@
             "id": "dsgr-arn8",
             "name": "Feasibility Study and Assessment of Communications Approaches for Real-Time Traffic Signal Applications Study Data",
             "url": "https://datahub.transportation.gov/Research-and-Statistics/Feasibility-Study-and-Assessment-of-Communications/dsgr-arn8"
+        },
+        {
+            "id": "6pbt-mwvy",
+            "name": "Smart Columbus Event Parking Management (EPM) Project",
+            "url": "https://datahub.transportation.gov/Automobiles/Smart-Columbus-Event-Parking-Management-EPM-Projec/6pbt-mwvy"
+        },
+        {
+            "id": "qjiz-q5q8",
+            "name": "Smart Columbus Smart Mobility Hubs (SMH) Project - Interactive Kiosk Experience (IKE)",
+            "url": "https://datahub.transportation.gov/Transit/Smart-Columbus-Smart-Mobility-Hubs-SMH-Project-Int/qjiz-q5q8"
+        },
+        {
+            "id": "pan6-vmtv",
+            "name": "Smart Columbus Smart Mobility Hubs (SMH) Project - Pivot Trip-Planning",
+            "url": "https://datahub.transportation.gov/Transit/Smart-Columbus-Smart-Mobility-Hubs-SMH-Project-Piv/pan6-vmtv"
+        },
+        {
+            "id": "hipz-qciy",
+            "name": "Smart Columbus Connected Vehicle Environment (CVE) Project",
+            "url": "https://datahub.transportation.gov/Automobiles/Smart-Columbus-Connected-Vehicle-Environment-CVE-P/hipz-qciy"
         }
     ]
 }
