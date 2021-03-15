@@ -15,7 +15,7 @@ if [ -f "$PACKAGE_FILENAME" ]; then
 fi
 
 mkdir $PACKAGE_FOLDER
-pip install -r requirements.txt --upgrade --target ./_package
+pip install -r requirements_lambda.txt --upgrade --target ./_package
 cp *.py ./$PACKAGE_FOLDER
 cp *.json ./$PACKAGE_FOLDER
 cd $PACKAGE_FOLDER
