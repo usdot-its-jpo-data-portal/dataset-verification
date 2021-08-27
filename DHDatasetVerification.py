@@ -247,7 +247,6 @@ class DHDatasetVerification:
         print('S3 Saved. Bucket: {} Path: {}'.format(params.s3_bucket_name, name))
 
     def _compare_datasets(self, params, retDatasets, expDatasets):
-        
         if params.dataset == 'all':
             dataSources = ['dtg', 'scgc', 'ntl']
         else:
