@@ -104,16 +104,15 @@
             "id": "dot:4216",
             "name": "Commercial Vehicle Information Systems and Networks (CVISN) Glossary: Baseline Version",
             "url": "https://rosap.ntl.bts.gov/view/dot/4216"
-        }
+        }      
     ],
-    "dtg": [
-        {
-            "id": "9k4m-a3jc",
-            "name": "Wyoming CV Pilot Basic Safety Message One Day Sample",
-            "url": "https://data.transportation.gov/Automobiles/Wyoming-CV-Pilot-Basic-Safety-Message-One-Day-Samp/9k4m-a3jc"
-        }
-    ],
+    "dtg": [],
     "scgc": [
+        {
+            "id": "dsgr-arn8",
+            "name": "Feasibility Study and Assessment of Communications Approaches for Real-Time Traffic Signal Applications Study Data",
+            "url": "https://datahub.transportation.gov/Research-and-Statistics/Feasibility-Study-and-Assessment-of-Communications/dsgr-arn8"
+        },
         {
             "id": "8ect-6jqj",
             "name": "Next Generation Simulation (NGSIM) Vehicle Trajectories and Supporting Data",
@@ -498,6 +497,56 @@
             "id": "y3gg-ygkc",
             "name": "Tampa CV Pilot Traveler Information Message (TIM) (Restricted Access)",
             "url": "https://datahub.transportation.gov/Automobiles/Tampa-CV-Pilot-Traveler-Information-Message-TIM-Re/y3gg-ygkc"
+        },
+        {
+            "id": "6pbt-mwvy",
+            "name": "Smart Columbus Event Parking Management (EPM) Project",
+            "url": "https://datahub.transportation.gov/Automobiles/Smart-Columbus-Event-Parking-Management-EPM-Projec/6pbt-mwvy"
+        },
+        {
+            "id": "qjiz-q5q8",
+            "name": "Smart Columbus Smart Mobility Hubs (SMH) Project - Interactive Kiosk Experience (IKE)",
+            "url": "https://datahub.transportation.gov/Transit/Smart-Columbus-Smart-Mobility-Hubs-SMH-Project-Int/qjiz-q5q8"
+        },
+        {
+            "id": "pan6-vmtv",
+            "name": "Smart Columbus Smart Mobility Hubs (SMH) Project - Pivot Trip-Planning",
+            "url": "https://datahub.transportation.gov/Transit/Smart-Columbus-Smart-Mobility-Hubs-SMH-Project-Piv/pan6-vmtv"
+        },
+        {
+            "id": "hipz-qciy",
+            "name": "Smart Columbus Connected Vehicle Environment (CVE) Project",
+            "url": "https://datahub.transportation.gov/Automobiles/Smart-Columbus-Connected-Vehicle-Environment-CVE-P/hipz-qciy"
+        },
+        {
+            "id": "6m7q-g56h",
+            "name": "Massachusetts Department of Transportation (MassDOT) Work Zone Data Exchange (WZDx) v3.1 Feed Sample",
+            "url": "https://datahub.transportation.gov/d/6m7q-g56h"
+        },
+        {
+            "id": "vxmm-9bi5",
+            "name": "New York City CV Pilot EVENT Data One Month Sample",
+            "url": "https://datahub.transportation.gov/d/vxmm-9bi5"
+        },
+        {
+            "id": "r5gt-nccp",
+            "name": "Smart Columbus Self-Driving Shuttle Project - SMRT Program",
+            "url": "https://datahub.transportation.gov/d/r5gt-nccp"
+        },
+        {
+            "id": "7qu7-j8rx",
+            "name": "Wyoming CV Pilot Basic Safety Message One Day Sample",
+            "url": "https://datahub.transportation.gov/d/7qu7-j8rx"
+        },
+        {
+            "id": "aarq-jhmq",
+            "name": "Smart Columbus Prenatal Trip Assistance Project",
+            "url": "https://datahub.transportation.gov/d/aarq-jhmq"
+        },
+        {
+            "id": "3ggd-etdz",
+            "name": "Smart Columbus Event Parking Management (EPM) Project - Fybr",
+            "url": "https://datahub.transportation.gov/d/3ggd-etdz"
         }
     ]
 }
