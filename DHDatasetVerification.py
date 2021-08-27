@@ -247,59 +247,6 @@ class DHDatasetVerification:
         print('S3 Saved. Bucket: {} Path: {}'.format(params.s3_bucket_name, name))
 
     def _compare_datasets(self, params, retDatasets, expDatasets):
-        
-<<<<<<< HEAD
-        diff = []
-        num_diff = 0
-        if params.dataset != 'all':
-            diff = self._get_difference(params.dataset, expDatasets, retDatasets)
-            num_diff += len(diff)
-            rep = self._generate_report(None, 'Datasets not found', params.dataset, diff, retDatasets, expDatasets)
-            diff = self._get_difference(params.dataset, retDatasets, expDatasets)
-            num_diff += len(diff)
-            rep = self._generate_report(rep, 'New Datasets', params.dataset, diff, retDatasets, expDatasets)
-            print (rep)
-            if params.save:
-                if params.fromlambda:
-                    self._save_report_to_s3(params, rep)
-                else:
-                    self._save_report_to_file(params.dataset, rep)
-
-        else:
-            ds = 'dtg'
-            diff = self._get_difference(ds, expDatasets, retDatasets)
-            num_diff += len(diff)
-            rep = self._generate_report(None, 'Datasets not found', ds, diff, retDatasets, expDatasets)
-            diff = self._get_difference(ds, retDatasets, expDatasets)
-            num_diff += len(diff)
-            rep = self._generate_report(rep, 'New Datasets', ds, diff, retDatasets, expDatasets)
-
-            ds = 'scgc'
-            diff = self._get_difference(ds, expDatasets, retDatasets)
-            num_diff += len(diff)
-            rep = self._generate_report(rep, 'Datasets not found', ds, diff, retDatasets, expDatasets)
-            diff = self._get_difference(ds, retDatasets, expDatasets)
-            num_diff += len(diff)
-            rep = self._generate_report(rep, 'New Datasets', ds, diff, retDatasets, expDatasets)
-
-            ds = 'ntl'
-            diff = self._get_difference(ds, expDatasets, retDatasets)
-            num_diff += len(diff)
-            rep = self._generate_report(rep, 'Datasets not found', ds, diff, retDatasets, expDatasets)
-            diff = self._get_difference(ds, retDatasets, expDatasets)
-            num_diff += len(diff)
-            rep = self._generate_report(rep, 'New Datasets', ds, diff, retDatasets, expDatasets)
-            
-            print(rep)
-            if params.save:
-                if params.fromlambda:
-                    self._save_report_to_s3(params, rep)
-                else:
-                    self._save_report_to_file(params.dataset, rep)
-            if num_diff > 0:
-                print('Returned datasets differs from expected datasets. Raise error.')
-                raise
-=======
         if params.dataset == 'all':
             dataSources = ['dtg', 'scgc', 'ntl']
         else:
@@ -327,7 +274,6 @@ class DHDatasetVerification:
         diff, diffCount = self._get_difference(ds, retDatasets, expDatasets, diffCount)
         rep = self._generate_report(rep, 'New Datasets', ds, diff, retDatasets, expDatasets)
         return rep,diffCount
->>>>>>> development
 
     def _do_verification(self, params, datasets):
         if not path.exists(params.expected) or path.isdir(params.expected):
