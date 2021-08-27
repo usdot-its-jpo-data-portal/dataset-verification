@@ -188,12 +188,13 @@ class DHDatasetVerification:
 
         return ds
     
-    def _get_difference(self, source, list1, list2):
+    def _get_difference(self, source, list1, list2, diffCount):
         # set1 = set(( ''.join(str(x.name).lower().split()), ''.join(str(x.source).lower().split()) ) for x in list2 if x.source==source)
         set1 = set(( x.id ) for x in list2 if x.source==source)
         # diffList = [ x for x in list1 if x.source==source and ( ''.join(str(x.name).lower().split()), ''.join(str(x.source).lower().split())) not in set1]
         diffList = [ x for x in list1 if x.source==source and ( x.id ) not in set1]
-        return diffList
+        diffCount += len(diffList)
+        return diffList, diffCount
 
     def _set_report_line(self, rep, txt):
         return '{}{}\n'.format(rep,txt)
@@ -245,9 +246,9 @@ class DHDatasetVerification:
         s3.Bucket(params.s3_bucket_name).put_object(Key=name, Body=encoded_data)
         print('S3 Saved. Bucket: {} Path: {}'.format(params.s3_bucket_name, name))
 
-
     def _compare_datasets(self, params, retDatasets, expDatasets):
         
+<<<<<<< HEAD
         diff = []
         num_diff = 0
         if params.dataset != 'all':
@@ -298,6 +299,35 @@ class DHDatasetVerification:
             if num_diff > 0:
                 print('Returned datasets differs from expected datasets. Raise error.')
                 raise
+=======
+        if params.dataset == 'all':
+            dataSources = ['dtg', 'scgc', 'ntl']
+        else:
+            dataSources = [params.dataset]
+        
+        rep = None
+        diffCount = 0
+        for ds in dataSources:
+            rep, diffCount = self._compare_ds_datasets(ds, retDatasets, expDatasets, rep, diffCount)
+
+        print (rep)
+        if params.save:
+            if params.fromlambda:
+                self._save_report_to_s3(params, rep)
+            else:
+                self._save_report_to_file(params.dataset, rep)
+
+        if diffCount > 0:
+            print('Returned datasets differs from expected datasets. Raise error.')
+            raise
+
+    def _compare_ds_datasets(self, ds, retDatasets, expDatasets, rep, diffCount):
+        diff, diffCount = self._get_difference(ds, expDatasets, retDatasets, diffCount)
+        rep = self._generate_report(rep, 'Datasets not found', ds, diff, retDatasets, expDatasets)
+        diff, diffCount = self._get_difference(ds, retDatasets, expDatasets, diffCount)
+        rep = self._generate_report(rep, 'New Datasets', ds, diff, retDatasets, expDatasets)
+        return rep,diffCount
+>>>>>>> development
 
     def _do_verification(self, params, datasets):
         if not path.exists(params.expected) or path.isdir(params.expected):
@@ -330,7 +360,3 @@ class DHDatasetVerification:
                 print('Error: Expected datasets file is required.')
                 return
             self._do_verification(self._params, datasets)
-
-
-
-
