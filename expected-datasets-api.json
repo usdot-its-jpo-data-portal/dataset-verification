@@ -111,13 +111,7 @@
             "url": "https://rosap.ntl.bts.gov/view/dot/54774"
         }
     ],
-    "dtg": [
-        {
-            "id": "9k4m-a3jc",
-            "name": "Wyoming CV Pilot Basic Safety Message One Day Sample",
-            "url": "https://data.transportation.gov/Automobiles/Wyoming-CV-Pilot-Basic-Safety-Message-One-Day-Samp/9k4m-a3jc"
-        }
-    ],
+    "dtg": [],
     "scgc": [
         {
             "id": "8ect-6jqj",
@@ -528,6 +522,36 @@
             "id": "hipz-qciy",
             "name": "Smart Columbus Connected Vehicle Environment (CVE) Project",
             "url": "https://datahub.transportation.gov/Automobiles/Smart-Columbus-Connected-Vehicle-Environment-CVE-P/hipz-qciy"
+        },
+        {
+            "id": "6m7q-g56h",
+            "name": "Massachusetts Department of Transportation (MassDOT) Work Zone Data Exchange (WZDx) v3.1 Feed Sample",
+            "url": "https://datahub.transportation.gov/d/6m7q-g56h"
+        },
+        {
+            "id": "vxmm-9bi5",
+            "name": "New York City CV Pilot EVENT Data One Month Sample",
+            "url": "https://datahub.transportation.gov/d/vxmm-9bi5"
+        },
+        {
+            "id": "r5gt-nccp",
+            "name": "Smart Columbus Self-Driving Shuttle Project - SMRT Program",
+            "url": "https://datahub.transportation.gov/d/r5gt-nccp"
+        },
+        {
+            "id": "7qu7-j8rx",
+            "name": "Wyoming CV Pilot Basic Safety Message One Day Sample",
+            "url": "https://datahub.transportation.gov/d/7qu7-j8rx"
+        },
+        {
+            "id": "aarq-jhmq",
+            "name": "Smart Columbus Prenatal Trip Assistance Project",
+            "url": "https://datahub.transportation.gov/d/aarq-jhmq"
+        },
+        {
+            "id": "3ggd-etdz",
+            "name": "Smart Columbus Event Parking Management (EPM) Project - Fybr",
+            "url": "https://datahub.transportation.gov/d/3ggd-etdz"
         }
     ]
 }
