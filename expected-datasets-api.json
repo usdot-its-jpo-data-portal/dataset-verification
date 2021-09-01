@@ -104,7 +104,12 @@
             "id": "dot:4216",
             "name": "Commercial Vehicle Information Systems and Networks (CVISN) Glossary: Baseline Version",
             "url": "https://rosap.ntl.bts.gov/view/dot/4216"
-        }      
+        },
+        {
+            "id": "dot:54774",
+            "name": "Feasibility Study and Assessment of Communications Approaches for Real-Time Traffic Signal Applications Study [supporting datasets]",
+            "url": "https://rosap.ntl.bts.gov/view/dot/54774"
+        }
     ],
     "dtg": [],
     "scgc": [
