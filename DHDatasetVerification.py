@@ -78,6 +78,8 @@ class DHDatasetVerification:
         for result in jResp['results']:
             if result == None:
                 continue
+            if result['resource']['type'] not in {'dataset', 'file', 'href', 'story'}:
+                continue
             ds = DHDataset()
             ds.name = result['resource']['name']
             ds.id = result['resource']['id']
