@@ -71,12 +71,14 @@ class DHDatasetVerification:
         if dtgConfig == None:
             print("Error: Configuration for DTG not found, check the configuration file.")
             quit()
-        reqStr = dtgConfig['url']+'?q=data&search_context='+dtgConfig['domain']+'&domains='+dtgConfig['domain']+'&tags=intelligent%20transportation%20systems%20(its)&provenance=official'
+        reqStr = dtgConfig['url']+'?q=data&search_context='+dtgConfig['domain']+'&domains='+dtgConfig['domain']+'&tags=its%20joint%20program%20office%20(jpo)&provenance=official'
         resp = requests.get(reqStr)
         jResp = json.loads(resp.text)
         datasets = []
         for result in jResp['results']:
             if result == None:
+                continue
+            if result['resource']['type'] not in {'dataset', 'file', 'href', 'story'}:
                 continue
             ds = DHDataset()
             ds.name = result['resource']['name']
